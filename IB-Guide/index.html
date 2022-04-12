@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/asset/img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <title>IB Subject Selection Guidebook</title>
 </head>
 
@@ -31,13 +32,14 @@
         <div class="navbar-collapse collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav navbar-left">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#about-me">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="https://ib-guide.all-inedu.com/">Home<span
+                            class="sr-only">(current)</span></a>
                 </li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right ml-auto">
                 <li class="nav-item">
-                    <a href="https://bit.ly/CryptoCompetition-Registration" target="_blank" class="btn btn-primary ">Get
+                    <a href="#guidebook" class="btn btn-primary ">Get
                         FREE Guidebooks
                     </a>
                 </li>
@@ -64,7 +66,7 @@
                         Download “The Complete Guide In Choosing The Compatible IB Subjects” Guidebook to help you
                         select your subjects wisely to enter your desired major and top university!
                     </h5>
-                    <a href="#timeline" class="btn btn-secondary">Download Free Guidebook Now
+                    <a href="#guidebook" class="btn btn-secondary">Download Free Guidebook Now
                     </a>
                 </div>
             </div>
@@ -894,14 +896,14 @@
                                                         <div class="custom-control custom-checkbox">
                                                             <input name="fields[audience][]" aria-label="audience"
                                                                 aria-required="true" class="custom-control-input"
-                                                                type="checkbox" value="Student" id="checkbox33-0">
+                                                                type="radio" value="Student" id="checkbox33-0">
                                                             <label class="custom-control-label" for="checkbox33-0">
                                                                 Student </label>
                                                         </div>
                                                         <div class="custom-control custom-checkbox">
                                                             <input name="fields[audience][]" aria-label="audience"
                                                                 aria-required="true" class="custom-control-input"
-                                                                type="checkbox" value="Parent" id="checkbox33-1">
+                                                                type="radio" value="Parent" id="checkbox33-1">
                                                             <label class="custom-control-label" for="checkbox33-1">
                                                                 Parent </label>
                                                         </div>
@@ -950,18 +952,23 @@
                                 </div>
                                 <div class="ml-form-successBody row-success" style="display:none">
                                     <div class="ml-form-successContent">
-                                        <h4>No More Bad Choices, Choose Your IB Subject With Our Guide!</h4>
-                                        <p style="text-align:center">Your FREE IB Subject Selection Guidebook will
+                                        <h4 style="color: #FFFFFF;font-weight: 700;">No More Bad Choices, Choose Your IB
+                                            Subject With Our Guide!</h4>
+                                        <p style="text-align:center; color: #FFFFFF; font-family: 'Archivo';">Your FREE
+                                            IB Subject Selection Guidebook will
                                             arrive on your email as soon as possible.</p>
                                         <p style="text-align:center"> </p>
-                                        <p style="text-align:center">Still looking for more guides to enter world’s top
+                                        <p style="text-align:center; color: #FFFFFF; font-family: 'Archivo';">Still
+                                            looking for more guides to enter world’s top
                                             universities? </p>
-                                        <p style="text-align:center">Check out what we have in store for you.</p>
-                                        <p></p>
-                                        <p style="text-align:center"><br><a
-                                                href="https://all-inedu.com/guidebook/">Access Other FREE Guidebooks</a>
+                                        <p style="text-align:center; color: #FFFFFF; font-family: 'Archivo';">Check out
+                                            what we have in store for you.</p>
+                                        <br>
+                                        <p style="text-align:center"><br><strong><a
+                                                    href="https://all-inedu.com/guidebook/"
+                                                    style="color: #FFFFFF; font-family: 'Archivo';">Access Other FREE
+                                                    Guidebooks</a></strong>
                                         </p>
-                                        <p style="text-align:center"><br></p>
                                     </div>
                                 </div>
                             </div>
@@ -1275,6 +1282,7 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         Splide.defaults = {
             perPage: 3,
@@ -1341,6 +1349,36 @@
             }
         }
         new Splide('.splide-two').mount();
+    </script>
+    <script>
+        (function () {
+            'use strict'
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated');
+
+                        if (form.reportValidity()) {
+                            event.preventDefault()
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'Your application has been submitted successfully!',
+                                showConfirmButton: false,
+                                timer: 2500
+                            });
+                        }
+                    }, false)
+                })
+        })()
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript">
