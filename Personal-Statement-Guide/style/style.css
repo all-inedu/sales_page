@@ -19,6 +19,12 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .btn-secondaryy{
+    margin-bottom: 5% !important;
+  }
+  .essay-img{
+    margin-top: 15% !important;
+  }
   .header-inner {
     background-color: white !important;
   }
@@ -106,6 +112,10 @@ body {
   .desc-personalstatement {
     text-align: center !important;
   }
+
+  .btn-secondaryy{
+    margin-bottom: 5% !important;
+  }
 }
 
 .slider-scholarship {
@@ -149,25 +159,25 @@ body {
   padding: 10px 25px;
 }
 
-.btn-primary {
+.btn-primaryy {
   background: #233872;
   color: #ffffff;
   font-weight: bold;
 }
 
-.btn-primary:hover {
+.btn-primaryy:hover {
   background: #fcae42;
   color: #ffffff;
   font-weight: bold;
 }
 
-.btn-secondary {
+.btn-secondaryy {
   background: #fcae42;
   color: #ffffff;
   font-weight: bold;
 }
 
-.btn-secondary:hover {
+.btn-secondaryy:hover {
   background: #233872;
   color: #ffffff;
   font-weight: bold;

@@ -149,25 +149,25 @@ body {
   padding: 10px 25px;
 }
 
-.btn-primary {
+.btn-primaryy {
   background: #233872;
   color: #ffffff;
   font-weight: bold;
 }
 
-.btn-primary:hover {
+.btn-primaryy:hover {
   background: #fcae42;
   color: #ffffff;
   font-weight: bold;
 }
 
-.btn-secondary {
+.btn-secondaryy {
   background: #fcae42;
   color: #ffffff;
   font-weight: bold;
 }
 
-.btn-secondary:hover {
+.btn-secondaryy:hover {
   background: #233872;
   color: #ffffff;
   font-weight: bold;
