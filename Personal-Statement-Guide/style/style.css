@@ -152,8 +152,8 @@ body {
 }
 
 .btn {
-  border-radius: 20px;
-  padding: 10px 25px;
+  border-radius: 27px;
+  padding: 13px 27px;
 }
 
 .btn-primaryy {
@@ -269,7 +269,7 @@ body {
   color: #ffffff;
   font-weight: normal;
   font-family: "Archivo", sans-serif;
-  text-align: left;
+  text-align: center;
 }
 
 .headline-personalstatement {
