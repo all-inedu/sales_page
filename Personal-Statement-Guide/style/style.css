@@ -1,14 +1,21 @@
 @font-face {
   font-family: "SFProRegular";
   src: URL("/asset/font/SFPRODISPLAYREGULAR.OTF") format("truetype");
+}
+@font-face {
   font-family: "SFProMedium";
   src: URL("/asset/font/SFPRODISPLAYMEDIUM.OTF") format("truetype");
+}
+@font-face {
   font-family: "SFProBold";
   src: URL("/asset/font/SFPRODISPLAYBOLD.OTF") format("truetype");
 }
 
-body {
-  font-family: "Archivo", sans-serif;
+
+
+
+body, h1, h2,h3,h4,h5,h6 {
+  font-family: "SFProRegular" !important;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -255,26 +262,26 @@ body {
 .subtitle-guidebook {
   color: #233872;
   font-weight: bold;
-  font-family: "Archivo", sans-serif;
+  font-family: "SFProRegular" !important;
 }
 
 .subtitle-personalstatement {
   color: #ffffff;
   font-weight: bold;
-  font-family: "Archivo", sans-serif;
+  font-family: "SFProRegular" !important;
   justify-content: center;
 }
 
 .desc-personalstatement {
   color: #ffffff;
   font-weight: normal;
-  font-family: "Archivo", sans-serif;
+  font-family: "SFProRegular" !important;
   text-align: center;
 }
 
 .headline-personalstatement {
   color: #fcae42;
-  font-family: "Archivo", sans-serif;
+  font-family: "SFProRegular" !important;
   padding-top: 5%;
 }
 
@@ -282,7 +289,7 @@ body {
   list-style-image: url("/asset/img/checklist.webp") !important;
   padding-left: 7%;
   font-weight: 500;
-  font-family: "Archivo", sans-serif;
+  font-family: "SFProRegular" !important;
 }
 /* .content-banner {
   width: 100%;
