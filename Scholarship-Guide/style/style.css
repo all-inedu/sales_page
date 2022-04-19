@@ -111,6 +111,12 @@ body {
   .desc-personalstatement {
     text-align: center !important;
   }
+  .footer-head{
+    color: #EEAB58;
+    font-weight: 700;
+    text-align: center !important;
+    align-items: center;
+  }
 }
 
 .slider-scholarship {
@@ -236,6 +242,7 @@ body {
   height: auto;
   top: 0;
 }
+
 
 .headline-header {
   color: #233872;
@@ -423,7 +430,7 @@ section {
 .footer-head{
   color: #EEAB58;
   font-weight: 700;
-  text-align: center;
+  text-align: right;
   align-items: center;
 }
 
