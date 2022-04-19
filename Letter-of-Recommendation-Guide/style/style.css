@@ -24,9 +24,6 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .btn-secondaryy{
-    margin-bottom: 5% !important;
-  }
   .header-inner {
     background-color: white !important;
   }
