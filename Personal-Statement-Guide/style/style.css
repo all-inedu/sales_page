@@ -432,15 +432,10 @@ section {
   margin: 0 !important;
 }
 
-.nopadding {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
 .footer-head{
   color: #EEAB58;
   font-weight: 700;
-  text-align: right;
+  text-align: center;
   align-items: center;
 }
 
